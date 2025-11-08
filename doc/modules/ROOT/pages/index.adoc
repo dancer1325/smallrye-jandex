@@ -1,41 +1,43 @@
 = Jandex
 
-Jandex is a space efficient Java class file indexer and offline reflection library.
-
-It supports:
-
-* Indexing a set of classes into a memory efficient representation
-* Browsing and searching for annotations, including Java 8 type annotations
-* Browsing and searching for declarations and types, including generic type information
-* Browsing and searching through the class and interface inheritance hierarchy
-* Persisting an index in a custom storage efficient format and fast loading of that format
-* Compatibility with previous API and storage format versions, as described in the <<compatibility_promise>>
-* Execution via API, command line tool, Ant, and Maven plugin
-
-Remember that Jandex has extensive API documentation in the link:https://javadoc.io/doc/io.smallrye/jandex/latest/index.html[javadoc form].
-This documentation site is currently rather incomplete, so please consult the javadoc frequently.
+* Jandex
+    ** supports
+        *** Indexing a set of classes | memory efficient representation
+        *** Browsing and searching for annotations (even ALSO Java 8 type annotations)
+        *** Browsing and searching for declarations and types (even ALSO generic type)
+        *** Browsing and searching -- through the -- class & interface inheritance hierarchy
+        *** Persisting an index | custom storage efficient format
+        *** fast loading of custom storage efficient format
+        *** Compatibility -- with -- PREVIOUS API & storage format versions
+            **** <<compatibility_promise>>
+        *** Execution -- via -- API, command line tool, Ant, and Maven plugin
+    ** link:https://javadoc.io/doc/io.smallrye/jandex/latest/index.html[API documentation]
 
 == Requirements
 
-Jandex 3.0+ requires Java 8 to run.
-
-TIP: The runtime Java version does _not_ affect the Jandex bytecode parsing capabilities.
-Jandex running on Java 8 can still parse Java 17 bytecode.
+* | Jandex 3.0+,
+    ** Java 8+
+        *** ❌runtime Java version does NOT affect the Jandex bytecode parsing capabilities❌
+            **** == Jandex running | Java 8, can STILL parse Java 17 bytecode
 
 == Getting Help
 
-Issues can be reported in link:https://github.com/smallrye/jandex/issues[GitHub Issues].
-
-For discussions, use the link:https://groups.google.com/g/smallrye[SmallRye Google Group] or the link:https://quarkusio.zulipchat.com/[Quarkus Zulip chat].
+* link:https://github.com/smallrye/jandex/issues[GitHub Issues]
+* link:https://groups.google.com/g/smallrye[SmallRye Google Group]
+* link:https://quarkusio.zulipchat.com/[Quarkus Zulip chat]
 
 [[compatibility_promise]]
 == Compatibility Promise
 
-Jandex uses an `X.Y.Z` versioning scheme.
-In the following text, we call `X` a _major_ version, `Y` a _minor_ version, and `Z` a _micro_ version.
+* Jandex
+    ** follows `X.Y.Z` versioning scheme
+        *** `X` == _major_ version
+        *** `Y` == _minor_ version
+        *** `Z` == _micro_ version
 
 === API
 
+* TODO:
 Jandex may break backward compatibility for _callers_ of the Jandex API in major versions.
 If you only call Jandex API, updating to a newer minor or micro version is safe.
 

@@ -1,9 +1,10 @@
 = Getting Jandex
 
-== Using Jandex in a Maven Project
+== | Maven Project
 
-Just add the following to your POM:
-
+* your "pom.xml",
+    ** add
++
 [source,xml]
 ----
 <dependency>
@@ -15,5 +16,4 @@ Just add the following to your POM:
 
 == Downloading Jandex
 
-If you don't use Maven, you can download the Jandex JAR link:https://search.maven.org/search?q=g:io.smallrye%20a:jandex[from Maven Central].
-This JAR is completely self-sufficient and doesn't require any dependencies.
+* download the link:https://search.maven.org/search?q=g:io.smallrye%20a:jandex[Jandex JAR]

@@ -1,7 +1,10 @@
 # Jandex 
 
-Jandex is a space efficient Java class file indexer and offline reflection library.
-See the [documentation](https://smallrye.io/jandex/).
+* Jandex
+  * == 💡Java class file indexer & offline reflection library💡
+    * space efficient
+
+* [documentation](doc/modules/ROOT/nav.adoc)
 
 ## Getting Help
 
